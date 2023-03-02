@@ -1,8 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Typography */
+  --family: 'Red Hat Text', sans-serif;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+body {
+  --colors-white: hsl(0, 0%, 100%);
+  --colors-timer-text: hsl(345, 74%, 61%);
+  --colors-timer-text-soft: hsl(345, 95%, 68%);
+  --colors-bg: linear-gradient(hsl(235, 16%, 14%), hsl(276, 23%, 17%));
+  --colors-card-bg: hsl(237, 18%, 59%);
+  --colors-mostly-black:hsl(234, 17%, 12%);
+  --colors-timer-subtitle:hsl(237, 18%, 59%);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--family);
+  color: var(--colors-text);
+  font-weight: 400;
 }
