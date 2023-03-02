@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -75,11 +76,11 @@ const Bottom = styled.div`
   }
 `
 
-export const Card = ({ children }) => {
+export const Card = memo(({ children }) => {
   return (
     <Wrapper>
       <Top>{children < 10 ? '0' + children : children}</Top>
       <Bottom>{children < 10 ? '0' + children : children}</Bottom>
     </Wrapper>
   );
-}
+});
